@@ -8,7 +8,7 @@ mysqlCnfOptions:
 assets:     
   - d7testsite.sql.gz
 steps:
-  - name: Drupal 7 Probo site setup.
+  - name: Drupal 7 Probo site setup..
     plugin: Drupal
     drupalVersion: 7
     database: d7testsite.sql.gz
