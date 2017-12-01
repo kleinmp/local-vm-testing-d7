@@ -1,0 +1,19 @@
+image: proboci/ubuntu-14.04-lamp:php5.6-nightly
+phpIniOptions:
+  upload_max_filesize: 25M
+  post_max_size: 25M
+  memory_limit: 256M
+mysqlCnfOptions:
+  innodb_file_per_table: OFF
+assets:     
+  - d7testsite.sql.gz
+steps:
+  - name: Probo site setup
+    plugin: Drupal
+    drupalVersion: 7
+    database: d7testsite.sql.gz
+    subDirectory: docroot
+    databaseGzipped: true
+    databaseUpdates: false
+    revertFeatures: false
+    clearCaches: true
