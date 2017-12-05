@@ -11,3 +11,14 @@ steps:
     databaseUpdates: false
     revertFeatures: false
     clearCaches: true
+  - name: Check versions.
+    plugin: Script
+    script:
+      - echo "checking bower version..."
+      - bower list
+      - echo "checking grunt version..."
+      - grunt -version
+      - echo "checking gulp version..."
+      - gulp -v
+      - echo "checking yarn version..."
+      - yarn version
