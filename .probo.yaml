@@ -21,4 +21,4 @@ steps:
       - echo "checking gulp version..."
       - gulp -v
       - echo "checking yarn version..."
-      - yarn version
+      - yarn --version
