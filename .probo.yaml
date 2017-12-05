@@ -15,7 +15,7 @@ steps:
     plugin: Script
     script:
       - echo "checking bower version..."
-      - bower list
+      - bower list --allow-root
       - echo "checking grunt version..."
       - grunt -version
       - echo "checking gulp version..."
