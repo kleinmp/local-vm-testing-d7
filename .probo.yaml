@@ -22,3 +22,6 @@ steps:
       - gulp -v
       - echo "checking yarn version..."
       - yarn --version
+      - mysql --version
+      - php -v
+      - apachectl -V
