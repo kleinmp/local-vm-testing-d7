@@ -14,5 +14,6 @@ steps:
     runInstall: true
     profileName: standard
     clearCaches: false
+    varnish: true
   - name: Hello Again
     command: 'echo "You can use Probo to run automated tests like the previous step did. Or not. Probo is useful with or without tests."'
