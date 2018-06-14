@@ -4,16 +4,9 @@ phpIniOptions:
   post_max_size: 25M
   memory_limit: 256M
 mysqlCnfOptions:
-  innodb_file_per_table: OFF
-assets:     
-  - d7testsite.sql.gz
+  innodb_file_per_table: off
 steps:
   - name: Drupal 7 Probo site setup.
     plugin: Drupal
     drupalVersion: 7
-    database: d7testsite.sql.gz
     subDirectory: docroot
-    databaseGzipped: true
-    databaseUpdates: false
-    revertFeatures: false
-    clearCaches: true
