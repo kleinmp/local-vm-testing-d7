@@ -1,4 +1,4 @@
-image: proboci/ubuntu-16.04-lamp:php7.2-nightly
+image: proboci/ubuntu-16.04-lamp:php-7.1
 phpIniOptions:
   upload_max_filesize: 25M
   post_max_size: 25M
