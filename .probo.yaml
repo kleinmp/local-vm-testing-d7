@@ -9,3 +9,5 @@ steps:
       memory_limit: 256M
     mysqlCnfOptions:
       innodb_file_per_table: 1
+    varnish:
+      enable: true
