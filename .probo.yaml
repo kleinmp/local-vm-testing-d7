@@ -4,9 +4,14 @@ steps:
     drupalVersion: 7
     subDirectory: docroot
     phpIniOptions:
-      upload_max_filesize: 26M
       post_max_size: 25M
       memory_limit: 256M
+      all:
+        upload_max_filesize: 26M
+      apache2:
+        error_reporting: E_ALL ~E_DEPRECATED
+      cli:
+        error_reporting: E_ALL
     mysqlCnfOptions:
       innodb_file_per_table: 1
     varnish:
