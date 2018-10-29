@@ -4,7 +4,7 @@ steps:
     plugin: Drupal
     drupalVersion: 7
 		database: daily_livithealth_2018-10-29_08h54m_Monday.sql.gz
-    databaseName: mydb
+    databaseName: mydbb
     databaseUser: mydbuser
     databaseGzipped: true
     subDirectory: docroot
