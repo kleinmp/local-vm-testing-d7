@@ -1,9 +1,11 @@
+---
 image: proboci/ubuntu-16.04-lamp:php-7.0-beta
 steps:
-  - name: Drupal 7 Probo site setup.
+  -
+    name: Drupal 7 Probo site setup.
     plugin: Drupal
     drupalVersion: 7
-		database: daily_livithealth_2018-10-29_08h54m_Monday.sql.gz
+    database: 'daily_livithealth_2018-10-29_08h54m_Monday.sql.gz'
     databaseName: mydbb
     databaseUser: mydbuser
     databaseGzipped: true
