@@ -17,3 +17,6 @@ steps:
       innodb_file_per_table: 1
     varnish:
       enable: false
+  - name: Break
+    plugin: Shell
+    command: mkdir /root/pup/pop
