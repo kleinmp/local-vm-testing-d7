@@ -1,3 +1,5 @@
+assets:
+  - pgsql.sql
 image: proboci/ubuntu-14.04-lamp:php-7.0-beta
 steps:
   - name: Drupal 7 Probo site setup.
@@ -5,6 +7,7 @@ steps:
     drupalVersion: 7
     subDirectory: docroot
     databaseEngine: pgsql
+    database: pgsql.sql
     phpIniOptions:
       post_max_size: 25M
       memory_limit: 256M
