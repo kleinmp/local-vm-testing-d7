@@ -1,6 +1,6 @@
 assets:
   - pgsql.sql
-image: proboci/ubuntu-14.04-lamp:php-7.0-beta
+image: proboci/ubuntu-14.04-lamp:php-5.5-beta
 steps:
   - name: Drupal 7 Probo site setup.
     plugin: Drupal
