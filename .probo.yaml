@@ -1,6 +1,6 @@
 assets:
   - livithealth.sql.gz
-image: proboci/ubuntu-16.04-lamp:php-7.0-beta
+image: proboci/ubuntu-16.04-lamp:php-7.0
 steps:
   - name: Drupal 7 Probo site setup.
     plugin: Drupal
