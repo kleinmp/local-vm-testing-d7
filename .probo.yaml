@@ -1,13 +1,14 @@
 assets:
-  - pgsql.sql
-image: proboci/ubuntu-14.04-lamp:php-5.5-beta
+  - livithealth.sql.gz
+image: proboci/ubuntu-16.04-lamp:php-7.0
 steps:
   - name: Drupal 7 Probo site setup.
     plugin: Drupal
     drupalVersion: 7
     subDirectory: docroot
-    databaseEngine: pgsql
-    database: pgsql.sql
+    databaseEngine: mysql
+    database: livithealth.sql.gz
+    databaseGzipped: true
     phpIniOptions:
       post_max_size: 25M
       memory_limit: 256M
@@ -21,6 +22,3 @@ steps:
       innodb_file_per_table: 1
     varnish:
       enable: false
-  - name: Break
-    plugin: Shell
-    command: mkdir /root/pup/pop
